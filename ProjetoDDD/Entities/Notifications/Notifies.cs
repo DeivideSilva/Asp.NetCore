@@ -45,7 +45,25 @@ namespace Entities.Notifications
             {
                 Notitycoes.Add(new Notifies
                 {
-                    mensagem = "Campo Obrigatório",
+                    mensagem = "O valor deve ser maior que 0",
+                    NomePropriedade = "nomePropriedade"
+                });
+
+                return false;
+            }
+
+            return true;
+
+        }
+
+        public bool ValidarPropriedadeDecimal(decimal valor, string nomePropriedade)
+        {
+
+            if (valor < 1 || string.IsNullOrWhiteSpace(nomePropriedade))
+            {
+                Notitycoes.Add(new Notifies
+                {
+                    mensagem = "O valor deve ser maior que 0",
                     NomePropriedade = "nomePropriedade"
                 });
 
