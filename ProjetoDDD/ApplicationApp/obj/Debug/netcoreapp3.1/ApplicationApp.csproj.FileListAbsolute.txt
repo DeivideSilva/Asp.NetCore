@@ -1,0 +1,14 @@
+Z:\Asp.NetCore\ProjetoDDD\ApplicationApp\bin\Debug\netcoreapp3.1\ApplicationApp.deps.json
+Z:\Asp.NetCore\ProjetoDDD\ApplicationApp\bin\Debug\netcoreapp3.1\ApplicationApp.dll
+Z:\Asp.NetCore\ProjetoDDD\ApplicationApp\bin\Debug\netcoreapp3.1\ApplicationApp.pdb
+Z:\Asp.NetCore\ProjetoDDD\ApplicationApp\bin\Debug\netcoreapp3.1\Domain.dll
+Z:\Asp.NetCore\ProjetoDDD\ApplicationApp\bin\Debug\netcoreapp3.1\Entities.dll
+Z:\Asp.NetCore\ProjetoDDD\ApplicationApp\bin\Debug\netcoreapp3.1\Domain.pdb
+Z:\Asp.NetCore\ProjetoDDD\ApplicationApp\bin\Debug\netcoreapp3.1\Entities.pdb
+Z:\Asp.NetCore\ProjetoDDD\ApplicationApp\obj\Debug\netcoreapp3.1\ApplicationApp.csprojAssemblyReference.cache
+Z:\Asp.NetCore\ProjetoDDD\ApplicationApp\obj\Debug\netcoreapp3.1\ApplicationApp.AssemblyInfoInputs.cache
+Z:\Asp.NetCore\ProjetoDDD\ApplicationApp\obj\Debug\netcoreapp3.1\ApplicationApp.AssemblyInfo.cs
+Z:\Asp.NetCore\ProjetoDDD\ApplicationApp\obj\Debug\netcoreapp3.1\ApplicationApp.csproj.CoreCompileInputs.cache
+Z:\Asp.NetCore\ProjetoDDD\ApplicationApp\obj\Debug\netcoreapp3.1\ApplicationApp.csproj.CopyComplete
+Z:\Asp.NetCore\ProjetoDDD\ApplicationApp\obj\Debug\netcoreapp3.1\ApplicationApp.dll
+Z:\Asp.NetCore\ProjetoDDD\ApplicationApp\obj\Debug\netcoreapp3.1\ApplicationApp.pdb

@@ -1,0 +1,16 @@
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.deps.json
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.dll
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\bin\Debug\netcoreapp3.1\Domain.dll
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\bin\Debug\netcoreapp3.1\Entities.dll
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\bin\Debug\netcoreapp3.1\Domain.pdb
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\bin\Debug\netcoreapp3.1\Entities.pdb
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csprojAssemblyReference.cache
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CoreCompileInputs.cache
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\bin\Debug\netcoreapp3.1\ApplicationApp.dll
+Z:\Asp.NetCore\ProjetoDDD\Infrastructure\bin\Debug\netcoreapp3.1\ApplicationApp.pdb
