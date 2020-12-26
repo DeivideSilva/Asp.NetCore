@@ -1,10 +1,6 @@
 ﻿using BibliotecaAPI.Data.Mapeamentos;
 using BibliotecaAPI.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BibliotecaAPI.Data
 {
@@ -16,10 +12,12 @@ namespace BibliotecaAPI.Data
         }
 
        public DbSet<Editora> Editoras { get; set; }
+       public DbSet<Livro> Livros { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new EditoraMap());
+            modelBuilder.ApplyConfiguration(new LivroMap());
         }
     }
 }

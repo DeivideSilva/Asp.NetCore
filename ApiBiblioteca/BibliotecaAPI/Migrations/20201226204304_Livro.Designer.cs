@@ -3,14 +3,16 @@ using BibliotecaAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BibliotecaAPI.Migrations
 {
     [DbContext(typeof(BibliotecaContexto))]
-    partial class BibliotecaContextoModelSnapshot : ModelSnapshot
+    [Migration("20201226204304_Livro")]
+    partial class Livro
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,21 +48,15 @@ namespace BibliotecaAPI.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("AnoPublicacao")
-                        .HasColumnType("int");
-
                     b.Property<string>("Autor")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NomeLivro")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Livro");
+                    b.ToTable("Livros");
                 });
 #pragma warning restore 612, 618
         }
