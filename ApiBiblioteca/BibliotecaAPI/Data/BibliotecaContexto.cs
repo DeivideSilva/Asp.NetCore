@@ -20,6 +20,7 @@ namespace BibliotecaAPI.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new EditoraMap());
+            modelBuilder.ApplyConfiguration(new LivroMap());
         }
     }
 }
