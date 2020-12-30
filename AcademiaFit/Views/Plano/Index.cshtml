@@ -1,0 +1,46 @@
+﻿@model List<AcademiaFit.Models.Plano>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="jumbotron">
+    <h1 class="display-3">Planos</h1>
+    <blockquote class="blockquote text-center">
+        <p class="mb-0">Venha conhecer nossos planos.</p>
+        <footer class="blockquote-footer">Temos o plano certo para você. Aproveite as Promoções!!! <cite title="Source Title"></cite></footer>
+    </blockquote>
+    <hr class="my-4">
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Mais informações</a>
+    </p>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Plano A</th>
+                <th scope="col">Plano B</th>
+                <th scope="col">Plano C</th>
+                <th scope="col">Plano D</th>
+            </tr>
+        </thead>
+    <tbody>
+        <tr class="table-secondary">
+            
+            @foreach(var plano in Model)
+            {
+               
+                <td>R$ @plano.Valor Reais </td>
+            }
+       </tr>
+    </tbody>
+
+    </table>
+</div>
+
+
+
+
+
