@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AcademiaFit.Models
 {
@@ -19,10 +16,16 @@ namespace AcademiaFit.Models
         [StringLength(150)]
         public string Email { get; set; }
 
-        [StringLength(20)]
+        
+        [Display(Name ="Data de nascimento")]
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime DataAniversario { get; set; }
 
-        [StringLength(20)]
+        
+        [Display(Name ="Data de inscrição")]
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime DataInscricao { get; set; }
 
         [ForeignKey("Plano")] 

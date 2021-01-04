@@ -1,0 +1,39 @@
+﻿
+@model List<AcademiaFit.Models.Cliente>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+
+            <th scope="col">Nome</th>
+            <th scope="col">Email</th>
+            <th scope="col">Plano</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-secondary">
+
+            @foreach (var cliente in Model)
+            {
+
+                <td>@cliente.Nome</td>
+                <td>@cliente.Email</td>
+                <td>@cliente.Plano.Nome</td>
+                <td>@Html.ActionLink("Editar", "Edit", new { id = cliente.Id })</td>
+
+
+            }
+        </tr>
+
+    </tbody>
+</table>
+
+
+
+
+

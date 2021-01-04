@@ -20,23 +20,24 @@
     <table class="table">
         <thead>
             <tr>
+
                 <th scope="col">Plano A</th>
                 <th scope="col">Plano B</th>
                 <th scope="col">Plano C</th>
                 <th scope="col">Plano D</th>
             </tr>
         </thead>
-    <tbody>
-        <tr class="table-secondary">
-            
-            @foreach(var plano in Model)
-            {
-               
-                <td>R$ @plano.Valor Reais </td>
-            }
-       </tr>
-    </tbody>
+        <tbody>
+            <tr class="table-secondary">
+                
+                @foreach (var plano in Model)
+                {
 
+                    <td>R$ @plano.Valor Reais </td>
+                }
+            </tr>
+           
+        </tbody>
     </table>
 </div>
 
