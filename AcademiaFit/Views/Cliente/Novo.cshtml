@@ -5,9 +5,9 @@
 }
 
 
-<h2>Novo Usuário</h2>
+<h2>@ViewBag.Acao</h2>
 
-<form asp-action="Salvar" method="post">
+<form asp-action="Novo" method="post">
     <div class="form-group">
         <label asp-for="Cliente.Nome" class="col-md-4 "></label>
         <div class="col-md-5">
@@ -44,8 +44,21 @@
                 @Html.DropDownListFor(m => m.Cliente.PlanoId, new SelectList(Model.Planos, "Id", "Nome"), "Selecione um plano")
             </label>
         </div>
-        <button type="submit" class="btn btn-success">Novo Usuario</button>
+        @Html.HiddenFor(c => c.Cliente.Id)
 
+
+        @if (ViewBag.Acao == "Novo Usuário")
+        {
+            <button type="submit" class="btn btn-success">Novo Usuario</button>
+        }
+        else
+        {
+            <button type="submit" class="btn btn-success">Editar Usuário</button>
+        }
+
+    </div>
+    <div>
+        <a asp-action="Index">Voltar</a>
     </div>
 </form>
 

@@ -13,6 +13,7 @@
             <th scope="col">Nome</th>
             <th scope="col">Email</th>
             <th scope="col">Plano</th>
+            <th scope="col">Ação</th>
         </tr>
     </thead>
     <tbody>
@@ -25,7 +26,7 @@
                 <td>@cliente.Email</td>
                 <td>@cliente.Plano.Nome</td>
                 <td>@Html.ActionLink("Editar", "Edit", new { id = cliente.Id })</td>
-                <td>@Html.ActionLink("Cliente","Salvar")</td>
+                <td>@Html.ActionLink("Novo","Novo")</td>
 
 
             }

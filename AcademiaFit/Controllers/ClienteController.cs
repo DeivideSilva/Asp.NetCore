@@ -21,14 +21,44 @@ namespace AcademiaFit.Controllers
             return View(clientes);
         }
 
-        [HttpPost]
-        public IActionResult Salvar(Cliente Cliente)
+        public ActionResult Novo()
         {
+            List<Plano> planos = new List<Plano>();
+            planos = _context.Planos.ToList();
+
+            PlanoUsuarioViewModel viewModel = new PlanoUsuarioViewModel
+            {
+                Planos = planos,
+                
+
+            };
+
+            ViewBag.Acao = "Novo Usuário";
+
+            return View("Novo", viewModel);
+        }
+
+        [HttpPost]
+        public IActionResult Salvar(Cliente cliente)
+        {
+            if(cliente.Id == 0)
+            {
+                _context.Clientes.Add(cliente);
+            }
+            else
+            {
+                var clienteInDb = _context.Clientes.Single(s => s.Id == cliente.Id);
+
+                clienteInDb.Nome = cliente.Nome;
+                clienteInDb.Email = cliente.Email;
+                clienteInDb.DataAniversario = cliente.DataAniversario;
+                clienteInDb.DataInscricao = cliente.DataInscricao;
+            }
             
-            _context.Clientes.Add(Cliente);
+            _context.Clientes.Add(cliente);
             _context.SaveChanges();
 
-            return RedirectToAction("Index",Cliente);
+            return RedirectToAction("Index","cliente");
         }
 
         public IActionResult Edit (int id)
@@ -47,7 +77,9 @@ namespace AcademiaFit.Controllers
                 Cliente = cliente
             };
 
-            return View("Salvar", viewModel);
+            ViewBag.Acao = "Editar Usuário";
+
+            return View("Novo", viewModel);
         }
 
        
