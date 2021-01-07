@@ -27,6 +27,7 @@ namespace ApiProdutos.Controllers
             return await _context.Produtos.ToListAsync();
         }
 
+
         // GET: api/Produtos/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Produto>> GetProduto(int id)
