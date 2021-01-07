@@ -4,17 +4,18 @@ using System.Text;
 
 namespace SGCliente.ApplicationCore.Entity
 {
-    public class Cliente
+    public class Profissao
     {
-        public Cliente()
+        public Profissao()
         {
 
         }
-        public int ClienteId { get; set; }
+
+        public int ProfissaoId { get; set; }
         public string Nome { get; set; }
-        public string CPF { get; set; }
-        public ICollection<Contato> Contato { get; set; }
-        public Endereco Endereco { get; set; }
+        public string Descricao { get; set; }
+        public string CBO { get; set; }
         public ICollection<ProfissaoCliente> ProfissoesClientes { get; set; }
+
     }
 }

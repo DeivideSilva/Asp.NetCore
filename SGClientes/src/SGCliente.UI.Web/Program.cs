@@ -10,11 +10,11 @@ namespace SGCliente.UI.Web
     {
         public static void Main(string[] args)
         {
-            //CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args).Build().Run();
 
             //var host = CreateHostBuilder(args);
 
-            // using (var scope = host.Services.CreateScope())
+            //using (var scope = host.Services.CreateScope())
             //{
             //    var services = scope.ServiceProvider;
             //    try
@@ -22,7 +22,7 @@ namespace SGCliente.UI.Web
             //        var context = services.GetRequiredService<ClienteContext>();
             //        DbInitializer.Initialize(context);
             //    }
-            //    catch(Exception ex)
+            //    catch (Exception ex)
             //    {
             //        var logger = services.GetRequiredService<ILogger<Program>>();
             //        logger.LogError(ex, "Um erro ocorreu no método seeding do contexto.");
@@ -30,7 +30,7 @@ namespace SGCliente.UI.Web
             //}
             //host.Run();
 
-            
+
         }
 
       
