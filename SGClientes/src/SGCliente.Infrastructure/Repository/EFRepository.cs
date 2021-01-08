@@ -17,14 +17,14 @@ namespace SGCliente.Infrastructure.Repository
         {
             _dbcontext = dbcontext;
         }
-        public TEntity Adicionar(TEntity entity)
+        public virtual TEntity Adicionar(TEntity entity)
         {
             _dbcontext.Set<TEntity>().Add(entity);
             _dbcontext.SaveChanges();
             return entity;
         }
 
-        public void Atualizar(TEntity entity)
+        public virtual void Atualizar(TEntity entity)
         {
             _dbcontext.Entry(entity).State = EntityState.Modified;
             _dbcontext.SaveChanges();
@@ -35,7 +35,7 @@ namespace SGCliente.Infrastructure.Repository
             return _dbcontext.Set<TEntity>().Where(predicado).AsEnumerable();
         }
 
-        public TEntity ObterPorId(int id)
+        public virtual TEntity ObterPorId(int id)
         {
             return _dbcontext.Set<TEntity>().Find(id);
         }
