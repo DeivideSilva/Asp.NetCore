@@ -19,6 +19,7 @@ namespace AcademiaFit.Controllers
             _context = context;
         }
 
+        [Route("Cliente/Listar")]
         // GET: Cliente
         public async Task<IActionResult> Index()
         {
@@ -45,6 +46,7 @@ namespace AcademiaFit.Controllers
             return View(cliente);
         }
 
+        [Route("Cliente/Cadastrar")]
         // GET: Cliente/Create
         public IActionResult Create()
         {
@@ -52,9 +54,7 @@ namespace AcademiaFit.Controllers
             return View();
         }
 
-        // POST: Cliente/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Route("Cliente/Cadastrar")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Email,DataAniversario,DataInscricao,PlanoId")] Cliente cliente)
