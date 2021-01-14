@@ -1,4 +1,5 @@
 ﻿using MeuPrimeiroTeste;
+using MeuPrimeiroTeste.PersonClasses;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -9,6 +10,7 @@ namespace UnitTest
     public class FileProcessTest
     {
         [TestMethod]
+        [Priority(0)]
         public void FileNameExists()
         {
             FileProcess fp = new FileProcess();
@@ -20,6 +22,7 @@ namespace UnitTest
         }
 
         [TestMethod]
+        [Priority(1)]
         public void FileNameDoesNotExists()
         {
             FileProcess fp = new FileProcess();
@@ -40,6 +43,7 @@ namespace UnitTest
         }
 
         [TestMethod]
+        [Priority(1)]
         public void FileNameNullOrEmpty_ThrowsArgumentNullException_UsingTryCatch()
         {
             FileProcess fp = new FileProcess();
@@ -56,5 +60,46 @@ namespace UnitTest
 
             Assert.Fail("Fail expected!!!");
         }
+        [TestMethod]
+        public void AreSameTest()
+        {
+            FileProcess x = new FileProcess();
+            FileProcess y = x;
+
+            Assert.AreSame(x, y);
+        }
+
+        [TestMethod]
+        public void AreNotSameTest()
+        {
+            FileProcess x = new FileProcess();
+            FileProcess y = new FileProcess();
+
+            Assert.AreNotSame(x,y);
+        }
+
+        #region IsInstanceOfType Test
+        [TestMethod]
+        public void IsInstanceOfTypeTest()
+        {
+            PersonManager mgr = new PersonManager();
+            Person person;
+
+            person = mgr.CreatePerson("Deivide", "Silva", true);
+
+            Assert.IsInstanceOfType(person, typeof(Supervisor));
+        }
+
+        [TestMethod]
+        public void IsNull()
+        {
+            PersonManager mgr = new PersonManager();
+            Person person;
+
+            person = mgr.CreatePerson("", "Silva", true);
+
+            Assert.IsNull(person);
+        }
+        #endregion
     }
 }
