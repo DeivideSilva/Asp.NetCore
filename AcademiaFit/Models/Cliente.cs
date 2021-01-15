@@ -19,9 +19,9 @@ namespace AcademiaFit.Models
 
         
         [Display(Name ="Data de nascimento")]
+        [Required(ErrorMessage = "Campo data de nascimento é obrigatório!")]
         [DataType(DataType.DateTime)]
         [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-        [Required(ErrorMessage ="Campo data de nascimento é obrigatório!")]
         public DateTime DataAniversario { get; set; }
 
         
