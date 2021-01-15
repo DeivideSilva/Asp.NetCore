@@ -25,5 +25,15 @@ namespace MeuPrimeiroTeste.PersonClasses
 
             return ret;
         }
+
+        public List<Person> GetPeople()
+        {
+            List<Person> people = new List<Person>();
+            people.Add(new Person() { FirstName = "Deivide", LastName = "Silva" });
+            people.Add(new Person() { FirstName = "Julia", LastName = "Gabriella" });
+            people.Add(new Person() { FirstName = "July", LastName = "Lopes" });
+
+            return people;
+        }
     }
 }
