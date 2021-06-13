@@ -28,6 +28,7 @@ namespace Series.Classes
             retorno += "Titulo: " + this.Titulo + Environment.NewLine;
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
             retorno += "Ano de Inicio: " + this.Ano;
+            retorno += "Excluido: " + this.Excluido;
             return retorno;
 
         }
@@ -40,6 +41,11 @@ namespace Series.Classes
         public int retornaId()
         {
             return this.Id;
+        }
+
+        public bool retornaExcluido()
+        {
+            return this.Excluido;
         }
 
         public void Excluir()
