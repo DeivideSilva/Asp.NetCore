@@ -1,5 +1,5 @@
 ﻿
-namespace Series.Enum
+namespace Series
 {
     public enum Genero
     {
